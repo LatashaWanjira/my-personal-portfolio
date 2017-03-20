@@ -1,0 +1,10 @@
+<h2>Admin Users</h2>
+
+<ul>
+	<% @admin_users.each do |admin_user| %>
+		<li><%= admin_user.first_name %></li>
+	<% end %>
+</ul>
+
+<% link_to "Add New Admin", new_admin_user_path %>
+<% link_to "Add New Admin", new_admin_user_path %>
